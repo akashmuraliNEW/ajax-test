@@ -87,21 +87,7 @@ Note:- Give a user details
     
     DEPLOY_TXT = """<b>𝐇𝐨𝐰 𝐭𝐨 𝐮𝐬𝐞 𝐨𝐫 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐦𝐨𝐯𝐢𝐞𝐬 𝐟𝐫𝐨𝐦 𝐑𝐞𝐛𝐞𝐤𝐡𝐚👇</b> 
   
-<b>✮ Tutorial ››</b> <i><b>https://t.me/rebekahbot1/3</b></i>
-
-    MANUAL FILTER
-- Filter is the feature were users can set automated replies for a particular keyword and Rebekah  will respond whenever a keyword is found the message
-
-<b>NOTE:</b>
-1. Rebekha should have admin privillage.
-2. only admins can add filters in a chat.
-3. alert buttons have a limit of 64 characters.
-
-<b>Commands and Usage:</b>
-• /filter - <code>add a filter in chat</code>
-• /filters - <code>list all the filters of a chat</code>
-• /del - <code>delete a specific filter in chat</code>
-• /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
+<b>✮ Tutorial ››</b> <i><b>https://t.me/rebekahbot1/3</b></i>"""
     SONG_TXT = """<b>𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴</b>
 
 <b>𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴, 𝙵𝙾𝚁 𝚃𝙷𝙾𝚂𝙴 𝚆𝙷𝙾 𝙻𝙾𝚅𝙴 𝙼𝚄𝚂𝙸𝙲. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙵𝙴𝙰𝚃𝚄𝙴 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙰𝙽𝚈 𝚂𝙾𝙽𝙶 𝚆𝙸𝚃𝙷 𝚂𝚄𝙿𝙴𝚁 𝙵𝙰𝚂𝚃 𝚂𝙿𝙴𝙴𝙳.𝚆𝙾𝚁𝙺𝚂 𝙾𝙽𝙻𝚈 𝙾𝙽 𝙶𝚁𝙾𝚄𝙿𝚂../</b>
