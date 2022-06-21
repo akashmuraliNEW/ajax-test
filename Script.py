@@ -163,11 +163,11 @@ Do as you wish with telegra.ph module!
 • This Command Is Available in goups and pms
 • This Command Can be used by everyone"""
 
-    PRIVATEBOT_TXT = """<b>𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙱𝙾𝚃 𝙵𝙾𝚁 𝚈𝙾𝚄</b>
-<b>›› 𝙳𝙾 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝙰 𝙱𝙾𝚃 𝚂𝙰𝙼𝙴 𝙻𝙸𝙺𝙴 𝚃𝙷𝙸𝚂</b>
-<b>›› 𝚆𝙸𝚃𝙷 𝙰𝙻𝙻 𝚈𝙾𝚄𝚁 𝙲𝚁𝙴𝙳𝙸𝚃𝚂</b>
-<b>›› 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁 𝙾𝚆𝙽𝙴𝚁𝚂𝙷𝙸𝙿</b>
-<b>›› 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝙴 <a href=https://t.me/HELL_GaM>คkคŞh</a>"""
+    PRIVATEBOT_TXT = """<b>𝐇𝐄𝐘 {} 𝐀𝐌 𝐒𝐓𝐈𝐋𝐋 𝐁𝐑𝐄𝐀𝐓𝐇𝐈𝐍𝐆 ❗❕</b>
+<b>›› 𝐼ᴛ𝓈 𝐸ᴀ𝓈ʏ 𝒯ᴏ 𝒰𝓈ᴇ 𝑀ᴇ 𝐹ᴏʟʟᴏᴡ 𝒯ʜᴇ𝓈ᴇ 𝒮ᴛᴇᴘ𝓈</b>
+<b>›› ᴄʀᴇᴀᴛᴇ ᴀ ɢʀᴏᴜᴘ</b>
+<b>›› ᴀᴅᴅ ᴍᴇ ᴛʜᴇʀᴇ ᴀꜱ ᴀᴅᴍɪɴ</b>
+<b>›› ᴅᴏɴᴇ😊"""
 
     JSON_TXT ="""<b>JSON:</b>
 
