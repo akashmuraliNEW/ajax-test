@@ -38,7 +38,7 @@ async def start(client, message):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
-         buttons = [[
+        buttons = [[
             InlineKeyboardButton('➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 𝐒𝐄𝐀𝐑𝐂𝐇', switch_inline_query_current_chat=''),
@@ -87,7 +87,7 @@ async def start(client, message):
             InlineKeyboardButton('🔍 𝐒𝐄𝐀𝐑𝐂𝐇', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🤖 𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url='https://t.me/MM_Films')
             ],[      
-            InlineKeyboardButton(' ℹ️ 𝐇𝐄𝐋𝐏', callback_data='help'),
+            InlineKeyboardButton('ℹ️ 𝐇𝐄𝐋𝐏', callback_data='help'),
             InlineKeyboardButton('😊 𝐀𝐁𝐎𝐔𝐓', callback_data='about')
             ],[
             InlineKeyboardButton('❈ 𝐎𝐖𝐍𝐄𝐑 ❈', url='https://t.me/HELL_GaM')
