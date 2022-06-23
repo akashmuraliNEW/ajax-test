@@ -57,7 +57,7 @@ async def showid(client, message):
             quote=True
         )
 
-@Client.on_message(filters.command("about"))
+@Client.on_message(filters.command("aboutt"))
 async def aboutme(client, message):
         buttons= [[
             InlineKeyboardButton('♥️ 𝙳𝙴𝙿𝙻𝙾𝚈 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻 ♥️', url='https://youtu.be/kB9TkCs8cX0')
