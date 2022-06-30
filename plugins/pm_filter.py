@@ -250,7 +250,7 @@ async def advantage_spoll_choker(bot, query):
         else:
             k = await query.message.edit('This Movie is not found in bot\n☞ Reasons👇\n☞ Spelling not crct\n☞ No special characters\n☞ Movie not released\n☞ NO cam prints\n☞ HD files mathreme bot ill upload chyu vro\n☞ contact admin if its an old movie to add in bot @HELL_GaM 💌')
             await asyncio.sleep(20)
-            await message.delete()
+            await msg.delete()
             await k.delete()
 
 
