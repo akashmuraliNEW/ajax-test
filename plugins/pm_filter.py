@@ -1291,6 +1291,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                          callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
                 ],
                 [
+                    InlineKeyboardButton('AUTOFILTER', callback_data=f'setgs#autofilter#{settings["autofilter"]}#{str(grp_id)}'),
+                    InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["autofilter"] else '🗑️ 𝐍𝐎',
+                                         callback_data=f'setgs#imdb#{settings["autofilter"]}#{str(grp_id)}')
+                ],
+                [
                     InlineKeyboardButton('𝐒𝐏𝐄𝐋𝐋 𝐂𝐇𝐄𝐂𝐊',
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
                     InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["spell_check"] else '🗑️ 𝐍𝐎',
