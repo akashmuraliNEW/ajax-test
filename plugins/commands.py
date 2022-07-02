@@ -435,6 +435,16 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
+                    'AUTOFILTER',
+                    callback_data=f'setgs#autofilter#{settings["autofilter"]}#{grp_id}',
+                ),
+                InlineKeyboardButton(
+                    '✅ 𝐘𝐄𝐒' if settings["autofilter"] else '🗑️ 𝐍𝐎',
+                    callback_data=f'setgs#autofilter#{settings["autofilter"]}#{grp_id}',
+                ),
+            ],
+            [
+                InlineKeyboardButton(
                     '𝐒𝐏𝐄𝐋𝐋 𝐂𝐇𝐄𝐂𝐊',
                     callback_data=f'setgs#spell_check#{settings["spell_check"]}#{grp_id}',
                 ),
