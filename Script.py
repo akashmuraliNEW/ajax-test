@@ -94,7 +94,7 @@ Note:- Give a user details
 
 <b>𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂</b>
 
-››  /song 𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴 
+››  /s 𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴 
 
 𝚆𝙾𝚁𝙺𝚂 𝙾𝙽𝙻𝚈 𝙾𝙽 𝙶𝚁𝙾𝚄𝙿"""
     PIN_TXT ="""<b>PIN MODULE</b>
