@@ -1468,7 +1468,7 @@ async def advantage_spell_chok(msg):
         reply = msg
         buttons = [[ InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 𝚃𝙾 𝙶𝙾𝙾𝙶𝙻𝙴 🔎", url=f"https://www.google.com/search?q={reply}") ],[ InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]]
         cap = "Couldn't anything related to tat"
-        spell = await msg.reply(text=cap.format(query=msg), disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))           
+        spell = await msg.reply_text(text=cap.format(query=msg), disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))           
         await asyncio.sleep(80)
         await spell.delete()
         return
