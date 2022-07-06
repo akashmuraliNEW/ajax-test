@@ -96,7 +96,7 @@ async def fil_mod(client, message):
           FILTER_MODE[str(message.chat.id)] = "False"
           await m.edit("**𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳**")
       else:
-          await m.edit("𝚄𝚂𝙴 :- /autofilter on 𝙾𝚁 /autofilter off /n command is used to diable/enable movies providing groups")
+          await m.edit("𝚄𝚂𝙴 :- /autofilter on 𝙾𝚁 /autofilter off /nCommand is used to Diable/Enable movies providing in groups")
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client,message):
