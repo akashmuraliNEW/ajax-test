@@ -233,7 +233,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('MOVIES', url='https://t.me/PrimeFlixMovies') ] , [ InlineKeyboardButton('SERIES', url='https://t.me/+KxdQDHo7mM05NzE1') ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('MOVIES', url='https://t.me/PrimeFlixMovies'), InlineKeyboardButton('SERIES', url='https://t.me/+KxdQDHo7mM05NzE1') ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
