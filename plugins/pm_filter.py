@@ -1,6 +1,7 @@
 import asyncio
 import re
 import ast
+import math
 
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
@@ -205,18 +206,17 @@ async def next_page(bot, query):
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📃 𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}",
-                                  callback_data="pages")]
+             InlineKeyboardButton(f"📃 Pages {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"📃 𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+            [InlineKeyboardButton(f"📃 𝗣𝗮𝗴𝗲 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
              InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
                 InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"📃 𝗣𝗮𝗴𝗲 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton(f"📃 𝗣𝗮𝗴𝗲 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
                 InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
@@ -1291,11 +1291,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                          callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton('AUTOFILTER', callback_data=f'setgs#auto_filter#{settings["auto_filter"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["auto_filter"] else '🗑️ 𝐍𝐎',
-                                         callback_data=f'setgs#auto_filter#{settings["auto_filter"]}#{str(grp_id)}')
-                ],
-                [
                     InlineKeyboardButton('𝐒𝐏𝐄𝐋𝐋 𝐂𝐇𝐄𝐂𝐊',
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
                     InlineKeyboardButton('✅ 𝐘𝐄𝐒' if settings["spell_check"] else '🗑️ 𝐍𝐎',
@@ -1361,7 +1356,7 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"📃 𝗣𝗮𝗴𝗲 1/{round(int(total_results) / 10)}", callback_data="pages"),
+            [InlineKeyboardButton(text=f"📃 𝗣𝗮𝗴𝗲 1/{math.ceil(int(total_results) / 10)}", callback_data="pages"),
              InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
